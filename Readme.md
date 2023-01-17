@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Алексей Лычагин](https://up.htmlacademy.ru/htmlcss/36/user/1868975).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Рахманов] (https://htmlacademy.ru/profile/flander).
 
 ---
 
