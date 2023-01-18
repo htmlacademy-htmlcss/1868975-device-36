@@ -5,8 +5,200 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">
+      <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="main-header-logo" src="" alt="Логотип «Device»">
+        </a>
+        <form class="main-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <label>
+            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+            <span class="visually-hidden">Поиск</span>
+          </label>
+          <button class="button-search" type="submit">Найти</button>
+        </form>
+        <ul class="main-navigation-user-list">
+          <li class="main-navigation-item-login">
+            <a class="main-navigation-link-login" href="#">Войти</a>
+          </li>
+          <li class="main-navigation-item-compare">
+            <a class="main-navigation-link-compare" href="#">Сравнить</a>
+          </li>
+          <li class="main-navigation-item-cart">
+            <a class="main-navigation-link-cart" href="#">Козина</a>
+          </li>
+        </ul>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Каталог товаров</a>
+            <div class="main-navigation-wrapper">
+              <ul class="main-navigation-subcatalog-list">
+                <li class="main-navigation-subcatalog-item">
+                  <a class="subcatalog-link" href="#">Виртуальная реальность</a>
+                  <a class="subcatalog-link" href="#">Моноподы для cелфи</a>
+                  <a class="subcatalog-link" href="#">Экшн-камеры</a>
+                </li>
+                <li class="main-navigation-subcatalog-item">
+                  <a class="subcatalog-link" href="#">Фитнес-браслеты</a>
+                  <a class="subcatalog-link" href="#">Умные часы</a>
+                </li>
+                <li class="main-navigation-subcatalog-item">
+                  <a class="subcatalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Доставка</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-index">
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Промо-слайдер</h2>
+        <div class="promo-slider-img-wrapper">
+          <img src="" alt="Квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру">
+        </div>
+        <span class="slide-number">01</span>
+        <div class="descr-wrapper">
+          <b>Порхает как бабочка,<br>жалит как пчела!</b>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+        </div>
+        <a class="button" href="#">Подробнее</a>
+        <div class="promo-slider-advantages">
+          <table>
+            <tr class="table-row-value">
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+            <tr class="table-row-parameter">
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
+            </tr>
+          </table>
+        </div>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Промо-слайдер</h2>
+        <div class="promo-slider-img-wrapper">
+          <img src="" alt="Фитнес-браслет">
+        </div>
+        <span class="slide-number">02</span>
+        <div class="descr-wrapper">
+          <b>Худеем<br>правильно!</b>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+        </div>
+        <a class="button" href="#">Подробнее</a>
+        <div class="promo-slider-advantages">
+          <table>
+            <tr class="table-row-value">
+              <td>48 часов</td>
+            </tr>
+            <tr class="table-row-parameter">
+              <td>Без подзарядки</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="promo-slider">
+        <h2 class="visually-hidden">Промо-слайдер</h2>
+        <div class="promo-slider-img-wrapper">
+          <img src="" alt="Самая длинная палка для селфи">
+        </div>
+        <span class="slide-number">03</span>
+        <div class="descr-wrapper">
+          <b>Делай селфи,<br>как Бен Стиллер!</b>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+        </div>
+        <a class="button" href="#">Подробнее</a>
+        <div class="promo-slider-advantages">
+          <table>
+            <tr class="table-row-value">
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr class="table-row-parameter">
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="popular-goods">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <ul class="popular-goods-list">
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="VR очки">
+              </div>
+              <p class="popular-goods-item-name">Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="Монопод">
+              </div>
+              <p class="popular-goods-item-name">Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="Экшн-камера">
+              </div>
+              <p class="popular-goods-item-name">Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="Фитнес-браслет">
+              </div>
+              <p class="popular-goods-item-name">Фитнес-браслеты</p>
+            </a>
+          </li>
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="Умные часы">
+              </div>
+              <p class="popular-goods-item-name">Умные часы</p>
+            </a>
+          </li>
+          <li class="popular-goods-item">
+            <a class="popular-goods-link" href="#">
+              <div class="popular-goods-item-wrapper">
+                <img src="" alt="Квадрокоптер">
+              </div>
+              <p class="popular-goods-item-name">ВКвадрокоптеры</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="services-slider">
+        
+
+      </section>
+
+    </main>
+
+
 
   </body>
 </html>
