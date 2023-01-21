@@ -18,38 +18,58 @@
           </label>
           <button class="button-search" type="submit">Найти</button>
         </form>
-        <ul class="navigation-user-list">
-          <li class="navigation-item-login">
-            <a class="navigation-link-login" href="#">Войти</a>
+        <ul class="menu-list log-in">
+          <li class="menu-item">
+            <a class="menu-link" href="#">Войти</a>
           </li>
-          <li class="navigation-item-compare">
-            <a class="navigation-link-compare" href="#">Сравнить</a>
+          <li class="menu-item log-out-main">
+            <a class="menu-link" href="#">Выйти</a>
           </li>
-          <li class="navigation-item-cart">
-            <span class="quantity-product-cart">2</span>
-            <a class="navigation-link-cart" href="#">Козина</a>
+        </ul>
+        <ul class="menu-list menu-basket">
+          <li class="menu-item">
+            <a class="menu-link compare" href="#">Сравнить</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link cart" href="#">Козина
+              <span class="cart-count">2</span>
+            </a>
+            <!-- <div class="popover popover-cart"> -->
+            <!-- </div> -->
           </li>
         </ul>
         <div class="header-subcatalog">
-          <button class="subcatalog-button" type="button">Каталог товаров</button>
           <ul class="subcatalog-list">
-            <li class="subcatalog-item">
-              <a href="#" class="subcatalog-link">Виртуальная реальность</a>
-            </li>
-            <li class="subcatalog-item">
-              <a href="#" class="subcatalog-link">Фитнес-браслеты</a>
-            </li>
-            <li class="subcatalog-item">
-              <a href="#" class="subcatalog-link">Квадрокоптеры</a>
-            </li>
-            <li class="subcatalog-item">
-              <a href="catalog.html" class="subcatalog-link">Моноподы для селфи</a>
-            </li>
-            <li class="subcatalog-item">
-              <a href="#" class="subcatalog-link">Умные часы</a>
-            </li>
-            <li class="subcatalog-item">
-              <a href="#" class="subcatalog-link">Экшн-камеры</a>
+            <li>
+              <a class="subcatalog-button" href="#">Каталог товаров</a>
+              <div class=" subcatalog-hide">
+                <div class="list-of-items">
+                  <ul class="video-device-list">
+                    <li class="video-device-item">
+                      <a class="video-device-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="video-device-item">
+                      <a class="video-device-link" href="catalog.html">Моноподы для cелфи</a>
+                    </li>
+                    <li class="video-device-item">
+                      <a class="video-device-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="smart-device-list">
+                    <li class="smart-device-item">
+                      <a class="smart-device-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="smart-device-item">
+                      <a class="smart-device-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="radio-controlled-device-list">
+                    <li class="radio-controlled-device-item">
+                      <a class="radio-controlled-device-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -238,15 +258,15 @@
         <ul class="services-description-list">
           <li class="services-description-item">
             <h3 class="service-title">Доставка</h3>
-            <p class="service-text">Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь<br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведьмы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="services-description-item">
             <h3 class="service-title">Гарантия</h3>
-            <p class="service-text">Если из-за возгорания купленного у нас товара у вас<br>сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
+            <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
           </li>
           <li class="services-description-item">
             <h3 class="service-title">Кредит</h3>
-            <p class="service-text">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
+            <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </ul>
       </section>
@@ -257,8 +277,8 @@
 
       <section class="about">
         <h2 class="about-title">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul class="transport-company-list">
           <li class="transport-company-item">Меловые линии</li>
           <li class="transport-company-item">СДИК</li>
@@ -269,7 +289,7 @@
 
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
-        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.<br>Заодно сможете проверить работоспособность покупки.</p>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.Заодно сможете проверить работоспособность покупки.</p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -296,7 +316,7 @@
 
     <footer class="main-footer">
       <a class="footer-logo" href="index.html"><img src="" alt="device"></a>
-      <p class="footer-contacts-address">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+      <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <ul class="footer-menu-list">
         <li class="footer-menu-item">
           <a class="footer-menu-link" href="#">Доставка</a>
