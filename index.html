@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -12,7 +13,7 @@
         <a class="navigation-logo" href="index.html">
           <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип «Device»">
         </a>
-        <form class="main-search-form" action="https://echo.htmlacademy.ru/courses" method="get">
+        <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label>
             <input class="search" type="search" name="search" placeholder="Поиск по сайту">
             <span class="visually-hidden">Поиск</span>
@@ -42,8 +43,8 @@
         <div class="header-subcatalog">
           <ul class="subcatalog-list">
             <li>
-              <a class="subcatalog-button" href="#">Каталог товаров</a>
-              <div class=" subcatalog-hide">
+              <a class="subcatalog-button" href="catalog.html">Каталог товаров</a>
+              <div class="subcatalog-hide">
                 <div class="list-of-items">
                   <ul class="video-device-list">
                     <li class="video-device-item">
@@ -98,7 +99,7 @@
             </div>
             <span class="slider-number">01</span>
             <div class="descr-wrapper">
-              <b class="slider-pagination-title">Порхает как бабочка,<br>жалит как пчела!</b>
+              <strong class="slider-pagination-title">Порхает как бабочка,<br>жалит как пчела!</strong>
               <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             </div>
             <a class="slider-button button" href="#">Подробнее</a>
@@ -121,7 +122,7 @@
             </div>
             <span class="slider-number">02</span>
             <div class="descr-wrapper">
-              <b class="slider-pagination-title">Худеем<br>правильно!</b>
+              <strong class="slider-pagination-title">Худеем<br>правильно!</strong>
               <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             </div>
             <a class="slider-button button" href="#">Подробнее</a>
@@ -142,7 +143,7 @@
             </div>
             <span class="slider-number">03</span>
             <div class="descr-wrapper">
-              <b class="slider-pagination-title">Делай селфи,<br>как Бен Стиллер!</b>
+              <strong class="slider-pagination-title">Делай селфи,<br>как Бен Стиллер!</strong>
               <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
             </div>
             <a class="slider-button button" href="#">Подробнее</a>
@@ -163,10 +164,10 @@
           </li>
         </ol>
         <div class="controls-slider">
-          <button class="slider-button slider-prev " type="button">
+          <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <button class="slider-button slider-next " type="button">
+          <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
@@ -307,7 +308,7 @@
       <section class="mailing">
         <h2 class="mailing-title">Подпишитесь<br>на рассылку</h2>
         <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
-        <form action="https://echo.htmlacademy.ru/courses">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" name="mailing" placeholder="Ваш e-mail" required>
           <button class="button-mailing" type="submit">Подписаться</button>
         </form>
@@ -333,7 +334,7 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграмм</span>
+            <span class="visually-hidden">Тtelegram</span>
           </a>
         </li>
         <li class="footer-social-item">
