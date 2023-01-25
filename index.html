@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -245,31 +246,34 @@
 
       <section class="services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <button class="services-button button" type="button">Доставка</button>
-          </li>
-          <li class="services-item">
-            <button class="services-button button" type="button">Гарантия</button>
-          </li>
-          <li class="services-item">
-            <button class="services-button button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <ul class="services-description-list">
-          <li class="services-description-item">
-            <h3 class="service-title">Доставка</h3>
-            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведьмы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-description-item">
-            <h3 class="service-title">Гарантия</h3>
-            <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-description-item">
-            <h3 class="service-title">Кредит</h3>
-            <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </li>
-        </ul>
+        <div class="service-container">
+          <ul class="services-list">
+            <li class="services-item">
+              <button class="services-button button" type="button">Доставка</button>
+            </li>
+            <li class="services-item">
+              <button class="services-button button" type="button">Гарантия</button>
+            </li>
+            <li class="services-item">
+              <button class="services-button button" type="button">Кредит</button>
+            </li>
+          </ul>
+          <ul class="services-description-list">
+            <li class="services-description-item delivery"">
+              <h3 class="service-title">Доставка</h3>
+              <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведьмы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-description-item guarantee">
+              <h3 class="service-title">Гарантия</h3>
+              <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-description-item loan">
+              <h3 class="service-title">Кредит</h3>
+              <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
+
       </section>
 
       <div class="delivery-order">
