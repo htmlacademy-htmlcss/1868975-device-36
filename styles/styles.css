@@ -4,7 +4,7 @@
   --basic-gray: #dcdcdc;
   --basic-light-gray: #ebebeb;
   --basic-light: #f0f0f0;
-  --basic-whihe: #ffffff;
+  --basic-white: #ffffff;
   --special-gray: #c4c4c4;
   --special-yellow: #ffe17f;
   --special-yellow-hover: #ffc700;
@@ -42,23 +42,8 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 400;
   color: var(--basic-black);
-  background-color: var(--basic-whihe);
 }
-
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
 
 .button {
   position: relative;
@@ -91,7 +76,6 @@ body {
 }
 
 .button-search {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -104,7 +88,7 @@ body {
   text-align: center;
   border-radius: 50%;
   color: var(--basic-black);
-  background-color: var(--basic-whihe);
+  background-color: var(--basic-white);
 }
 
 .subcatalog-button,
@@ -173,7 +157,7 @@ body {
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
-  color: var(--basic-whihe);
+  color: var(--basic-white);
   background-color: var(--special-yellow);
 }
 
@@ -325,9 +309,6 @@ body {
 
 .contacts-phone {
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   text-decoration-line: underline;
   color: var(--basic-dark);
 }
@@ -361,7 +342,6 @@ body {
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 18px;
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.2em;
@@ -375,15 +355,13 @@ body {
 /* Footer */
 
 .main-footer {
-  color: var(--basic-whihe);
+  color: var(--basic-white);
   background-color: var(--basic-dark);
 }
 .main-footer a {
-  color: var(--basic-whihe);
+  color: var(--basic-white);
 }
 .footer-contacts-address {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
@@ -393,7 +371,6 @@ body {
 }
 .footer-menu-link {
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
@@ -473,9 +450,6 @@ body {
 
 .select-item {
   font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -486,7 +460,7 @@ body {
 }
 
 .catalog {
-  background-color: var(--basic-whihe);
+  background-color: var(--basic-white);
 }
 
 .product-card-link {
@@ -502,7 +476,6 @@ body {
 
 .product-price {
   font-weight: 400;
-  font-size: 18px;
   line-height: 21px;
   color: var(--basic-dark);
 }
@@ -516,7 +489,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  background-color: var(--basic-whihe);
+  background-color: var(--basic-white);
   text-transform: uppercase;
   border: 3px solid #e5e5e5;
 }
@@ -532,7 +505,6 @@ body {
 }
 
 .pagination-link {
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
