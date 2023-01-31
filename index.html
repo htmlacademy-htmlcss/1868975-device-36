@@ -245,31 +245,34 @@
 
       <section class="services">
         <h2 class="visually-hidden">Дополнительные услуги</h2>
-        <ul class="services-list">
-          <li class="services-item">
-            <button class="services-button button" type="button">Доставка</button>
-          </li>
-          <li class="services-item">
-            <button class="services-button button" type="button">Гарантия</button>
-          </li>
-          <li class="services-item">
-            <button class="services-button button" type="button">Кредит</button>
-          </li>
-        </ul>
-        <ul class="services-description-list">
-          <li class="services-description-item">
-            <h3 class="service-title">Доставка</h3>
-            <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведьмы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-description-item">
-            <h3 class="service-title">Гарантия</h3>
-            <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-description-item">
-            <h3 class="service-title">Кредит</h3>
-            <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </li>
-        </ul>
+        <div class="service-container">
+          <ul class="services-list">
+            <li class="services-item">
+              <button class="services-button button" type="button">Доставка</button>
+            </li>
+            <li class="services-item">
+              <button class="services-button button" type="button">Гарантия</button>
+            </li>
+            <li class="services-item">
+              <button class="services-button button" type="button">Кредит</button>
+            </li>
+          </ul>
+          <ul class="services-description-list">
+            <li class="services-description-item delivery"">
+              <h3 class="service-title">Доставка</h3>
+              <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведьмы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services-description-item guarantee">
+              <h3 class="service-title">Гарантия</h3>
+              <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-description-item loan">
+              <h3 class="service-title">Кредит</h3>
+              <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </li>
+          </ul>
+        </div>
+
       </section>
 
       <div class="delivery-order">
@@ -278,8 +281,8 @@
 
       <section class="about">
         <h2 class="about-title">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-        <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+        <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="about-text">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul class="transport-company-list">
           <li class="transport-company-item">Меловые линии</li>
           <li class="transport-company-item">СДИК</li>
@@ -311,7 +314,7 @@
           <input type="email" name="mailing" placeholder="Ваш e-mail" required>
           <button class="button-mailing" type="submit">Подписаться</button>
         </form>
-        <span>Это бесплатно</span>
+        <span class="malling-notice" >Это бесплатно</span>
       </section>
     </main>
 
@@ -333,12 +336,12 @@
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Тtelegram</span>
+            <span class="visually-hidden">Тelegram</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
+            <span class="visually-hidden">YouTube</span>
           </a>
         </li>
         <li class="footer-social-item">
