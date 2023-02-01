@@ -97,7 +97,9 @@ main-container {
 }
 
 /* Navigation */
-.header-logo{
+.navigation-logo {
+  display: block;
+  width: 145px;
   margin-left: 60px;
 }
 
@@ -182,9 +184,9 @@ main-container {
   text-decoration: none;
 }
 
-.subcatalog-hide{
+/* .subcatalog-hide{
   display: none;
-}
+} */
 
 .subcatalog-list {
   margin: 0;
@@ -226,12 +228,14 @@ main-container {
 .video-device-list {
   width: 222px;
   margin: 0;
+  margin-right: 30px;
   padding: 0;
   list-style: none;
 }
 .smart-device-list {
   width: 211px;
   margin: 0;
+  margin-right: 1px;
   padding: 0;
   list-style: none;
 }
@@ -243,6 +247,10 @@ main-container {
 }
 
 /* Slider */
+.promo-slider {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .slider-pagination-title {
   font-family: "Raleway", sans-serif;
@@ -252,10 +260,16 @@ main-container {
   color: var(--basic-black);
 }
 
+.promo-slider-img-wrapper {
+  width: 560px;
+}
+
 .slider-number {
+  display: block;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
+  text-align: end;
   color: var(--basic-white);
   background-color: var(--special-yellow);
 }
@@ -274,7 +288,18 @@ main-container {
 }
 
 .slider-pagination {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.slider-pagination-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-about-product {
+  width: 560px;
 }
 
 /* Category list */
@@ -288,24 +313,42 @@ main-container {
 }
 
 .category-item-wrapper {
+  display: flex;
   width: 160px;
   height: 160px;
   background-color: var(--special-yellow);
 }
+.category-item-wrapper img {
+  margin: auto;
+}
 
 .category-link {
+  display: block;
+  width: 160px;
   text-decoration: none;
 }
 
 .category-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 1160px;
   list-style: none;
 }
 /* Services */
-.service-container {
+.services {
   background-color: var(--basic-light); /*скорей всего заменить на градиент*/
 }
 
+.service-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .services-button {
+  width: 280px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
@@ -315,6 +358,7 @@ main-container {
   background-color: var(--basic-black);
   color: var(--special-yellow);
   border: none;
+  cursor: pointer;
 }
 /* добивить состояния  before + новый class */
 .service-title {
@@ -324,35 +368,63 @@ main-container {
   line-height: 50px;
 }
 
+.services-description-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list {
+  width: 287px;
+  margin: 0;
+  padding: 0;
+  margin-right: 116px;
+  list-style: none;
+}
+
+
 .service-text {
+  width: 475px;
   color: var(--basic-dark);
 }
 
-.delivery {
+.service-delivery {
   background-image: url("../images/deliveryman.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  width: 694px;
+  margin-top: 72px;
 }
 
-.guarantee {
+.service-guarantee {
   background-image: url("../images/garantiya-icon.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  width: 729px;
+  margin-top: 72px;
 }
 
-.loan {
+.service-loan {
   background-image: url("../images/credit-icon.svg");
   background-repeat: no-repeat;
   background-position: right center;
+  width: 729px;
+  margin-top: 72px;
+
 }
 
 /* Delivery */
 
 .delivery-order {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
   background-color: var(--basic-light);
 }
 
 .delivery-order-link {
+  margin: 0 auto;
+  align-self: center;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
@@ -365,6 +437,15 @@ main-container {
 }
 
 /* About */
+.about-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+.about{
+  width: 520px;
+  margin-right: 108px;
+}
 
 .about-title {
   font-family: "Raleway", sans-serif;
@@ -381,6 +462,11 @@ main-container {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+}
+
+.contacts{
+  width: 532px;
+  margin-left: auto;
 }
 
 .contacts-title {
@@ -412,6 +498,11 @@ main-container {
   color: var(--basic-dark);
 }
 
+.contacts-schedule{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .contacts-schedule-item {
   color: var(--basic-dark);
 }
