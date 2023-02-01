@@ -8,42 +8,44 @@
   <body>
     <header class="main-header">
       <h1 class="visually-hidden">Интернет-магазин гаджетов "DEVICE"</h1>
+      <a class="navigation-logo" href="index.html">
+        <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип «Device»">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="header-logo" src="images/header-logo.svg" width="145" height="36" alt="Логотип «Device»">
-        </a>
-        <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label>
-            <input class="search" type="search" name="search" placeholder="Поиск по сайту">
-            <span class="visually-hidden">Поиск</span>
-          </label>
-          <button class="button-search" type="submit">Найти</button>
-        </form>
-        <ul class="menu-list log-in">
-          <li class="menu-item">
-            <a class="menu-link" href="#">Войти</a>
-          </li>
-          <li class="menu-item log-out-main">
-            <a class="menu-link" href="#">Выйти</a>
-          </li>
-        </ul>
-        <ul class="menu-list menu-basket">
-          <li class="menu-item">
-            <a class="menu-link compare" href="#">Сравнить</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link cart" href="#">Козина
-              <span class="cart-count">2</span>
-            </a>
-            <!-- <div class="popover popover-cart"> -->
-            <!-- </div> -->
-          </li>
-        </ul>
+        <div class="user-navigation">
+          <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="get">
+            <label>
+              <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+              <span class="visually-hidden">Поиск</span>
+            </label>
+            <button class="button-search" type="submit">Найти</button>
+          </form>
+          <ul class="menu-list log-in">
+            <li class="menu-item">
+              <a class="menu-link" href="#">Войти</a>
+            </li>
+            <li class="menu-item log-out-main">
+              <a class="menu-link" href="#">Выйти</a>
+            </li>
+          </ul>
+          <ul class="menu-list menu-basket">
+            <li class="menu-item">
+              <a class="menu-link compare" href="#">Сравнить</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link cart" href="#">Козина
+                <span class="cart-count">2</span>
+              </a>
+              <!-- <div class="popover popover-cart"> -->
+              <!-- </div> -->
+            </li>
+          </ul>
+        </div>
         <div class="header-subcatalog">
           <ul class="subcatalog-list">
             <li>
               <a class="subcatalog-button" href="#">Каталог товаров</a>
-              <div class="subcatalog-hide">
+              <div class="catalog-wrapper subcatalog-hide">
                 <div class="list-of-items">
                   <ul class="video-device-list">
                     <li class="video-device-item">
@@ -73,22 +75,22 @@
               </div>
             </li>
           </ul>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
       </nav>
     </header>
 
-    <main class="main-index">
+    <main class="main-index main-container">
       <section class="promo-slider">
         <h2 class="visually-hidden">Промо-слайдер</h2>
         <ol class="slider-pagination">
@@ -320,7 +322,9 @@
 
     <footer class="main-footer">
       <a class="footer-logo" href="index.html"><img src="images/footer-logo.svg" width="145" height="36" alt="device"></a>
-      <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      <address class="footer-contacts-address">
+        <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
       <ul class="footer-menu-list">
         <li class="footer-menu-item">
           <a class="footer-menu-link" href="#">Доставка</a>
@@ -332,7 +336,9 @@
           <a class="footer-menu-link" href="#">Контакты</a>
         </li>
       </ul>
-      <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <address class="footer-contacts-address">
+        <a class="footer-contact-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      </address>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-link" href="https://t.me/htmlacademy">

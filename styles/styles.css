@@ -38,7 +38,28 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -66,13 +87,28 @@ body {
 /* Pages */
 
 .main-header {
+  width: 1160px;
+  margin: 0 auto;
   background-color: var(--special-yellow);
 }
 
+main-container {
+  flex-grow: 1;
+}
+
 /* Navigation */
-.menu-link {
-  color: var(--basic-black);
-  text-decoration: none;
+.header-logo{
+  margin-left: 60px;
+}
+
+.user-navigation {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.main-search-form {
+  width: 517px;
 }
 
 .button-search {
@@ -82,6 +118,27 @@ body {
   color: var(--basic-black);
   background-color: var(--special-yellow);
 }
+
+.menu-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-link {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.menu-basket{
+  margin-left: auto;
+}
+
+.log-out-main {
+  display: none;
+}
+
 .cart-count {
   font-size: 14px;
   line-height: 17px;
@@ -90,6 +147,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 
 .subcatalog-button,
 .navigation-link {
@@ -124,22 +182,63 @@ body {
   text-decoration: none;
 }
 
+.subcatalog-hide{
+  display: none;
+}
+
 .subcatalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
+
+.header-subcatalog{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1040px;
+}
+
+
+.list-of-items {
+  display: flex;
+}
+
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 480px;
   list-style: none;
 }
-.menu-list {
-  list-style: none;
+
+.navigation-item:first-child {
+  margin-right: 47px;
 }
+.navigation-item:nth-child(2) {
+  margin-right: 45px;
+}
+.navigation-item:nth-child(3) {
+  margin-right: -1px;
+}
+
 .video-device-list {
+  width: 222px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .smart-device-list {
+  width: 211px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .radio-controlled-device-list {
+  width: 211px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -362,6 +461,7 @@ body {
   color: var(--basic-white);
 }
 .footer-contacts-address {
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
 }
@@ -379,6 +479,7 @@ body {
 }
 
 .footer-contact-phone {
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-decoration-line: underline;
