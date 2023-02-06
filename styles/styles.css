@@ -133,7 +133,7 @@ main-container {
   text-decoration: none;
 }
 
-.menu-basket{
+.menu-basket {
   margin-left: auto;
 }
 
@@ -149,7 +149,6 @@ main-container {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
-
 
 .subcatalog-button,
 .navigation-link {
@@ -195,13 +194,12 @@ main-container {
   list-style: none;
 }
 
-.header-subcatalog{
+.header-subcatalog {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   width: 1040px;
 }
-
 
 .list-of-items {
   display: flex;
@@ -361,7 +359,7 @@ main-container {
   border: none;
   cursor: pointer;
 }
-/* добивить состояния  before + новый class */
+/* добавить состояния  before + новый class */
 .service-title {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -369,7 +367,7 @@ main-container {
   line-height: 50px;
 }
 
-.services-description-list{
+.services-description-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -382,7 +380,6 @@ main-container {
   margin-right: 116px;
   list-style: none;
 }
-
 
 .service-text {
   width: 475px;
@@ -411,7 +408,6 @@ main-container {
   background-position: right center;
   width: 729px;
   margin-top: 72px;
-
 }
 
 /* Delivery */
@@ -443,7 +439,7 @@ main-container {
   width: 1160px;
   margin: 0 auto;
 }
-.about{
+.about {
   width: 520px;
   margin-right: 108px;
 }
@@ -465,7 +461,7 @@ main-container {
   line-height: 20px;
 }
 
-.contacts{
+.contacts {
   width: 532px;
   margin-left: auto;
 }
@@ -503,7 +499,7 @@ main-container {
   color: var(--basic-dark);
 }
 
-.contacts-schedule{
+.contacts-schedule {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -581,7 +577,7 @@ main-container {
   margin: 0 auto;
 }
 
-.footer-info-contaiter{
+.footer-info-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
@@ -624,7 +620,7 @@ main-container {
   text-decoration-line: underline;
 }
 
-.footer-contacts-container{
+.footer-contacts-container {
   display: flex;
   justify-content: flex-end;
   width: 1160px;
@@ -641,7 +637,6 @@ main-container {
   list-style: none;
 }
 
-
 .footer-social-link {
   display: block;
   width: 40px;
@@ -656,11 +651,11 @@ main-container {
   background-color: var(--basic-light);
 }
 
- .page-container {
+.page-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
- }
+}
 /* Breadcrumbs */
 .breadcrumbs {
   width: 1160px;
@@ -697,7 +692,7 @@ main-container {
   width: 320px;
 }
 
-.catalog-section{
+.catalog-section {
   width: 840px;
 }
 .catalog-filter {
