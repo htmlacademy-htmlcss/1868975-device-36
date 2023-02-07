@@ -89,7 +89,8 @@ body {
 .main-header {
   width: 1160px;
   margin: 0 auto;
-  background-color: var(--special-yellow);
+  margin-top: 15px;
+  background: linear-gradient(to bottom, var(--basic-white) 25px, var(--special-yellow) 20px);
 }
 
 main-container {
@@ -98,19 +99,25 @@ main-container {
 
 /* Navigation */
 .navigation-logo {
-  display: block;
+  display: inline-block;
   width: 145px;
   margin-left: 60px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .user-navigation {
   display: flex;
+  align-items: center;
   width: 1040px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .main-search-form {
   width: 517px;
+  height: 40px;
+  margin-right: 26px;
 }
 
 .button-search {
@@ -123,19 +130,38 @@ main-container {
 
 .menu-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .menu-link {
+  display: block;
+  height: 30px;
+  min-width: 54px;
   color: var(--basic-black);
+  border: 2px solid #AF4FFF;
   text-decoration: none;
+}
+
+.log-in {
+  padding-left: 27px;
+}
+
+.compare {
+  padding-left: 22px;
+  margin-right: 36px;
+}
+
+.cart {
+  padding-left: 25px;
 }
 
 .menu-basket {
   margin-left: auto;
 }
+
 
 .log-out-main {
   display: none;
@@ -162,6 +188,15 @@ main-container {
   text-decoration: none;
 }
 
+navigation-link{
+  display: block;
+}
+.subcatalog-button {
+  display: block;
+  padding: 15px 57px 15px 0;
+  box-sizing: border-box;
+}
+
 .video-device-link {
   font-size: 16px;
   line-height: 18px;
@@ -184,12 +219,13 @@ main-container {
 }
 
 /* для скрытия subcatalog */
-/* .subcatalog-hide{
+.subcatalog-hide{
   display: none;
-} */
+}
 
 .subcatalog-list {
   margin: 0;
+  margin-right: 276px;
   padding: 0;
   list-style: none;
 }
@@ -197,6 +233,7 @@ main-container {
 .header-subcatalog {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
   width: 1040px;
 }
@@ -210,7 +247,6 @@ main-container {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 480px;
   list-style: none;
 }
 
@@ -218,7 +254,7 @@ main-container {
   margin-right: 47px;
 }
 .navigation-item:nth-child(2) {
-  margin-right: 45px;
+  margin-right: 51px;
 }
 .navigation-item:nth-child(3) {
   margin-right: -1px;
