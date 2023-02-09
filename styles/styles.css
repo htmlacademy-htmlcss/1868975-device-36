@@ -310,10 +310,6 @@ body {
   height: auto;
 }
 
-.descr-wrapper {
-  margin-top: 121px;
-}
-
 .slider-number {
   display: block;
   height: 126px;
@@ -324,7 +320,6 @@ body {
   text-align: end;
   color: var(--basic-white);
   background-color: var(--special-yellow);
-
 }
 
 .slider-description {
@@ -346,9 +341,9 @@ body {
 
 .feature-name td {
   padding: 0;
+  padding-top: 12px;
   padding-right: 20px;
 }
-
 
 .slider-pagination {
   margin: 0;
@@ -418,7 +413,11 @@ body {
 .services {
   min-height: 391px;
   margin-bottom: 70px;
-  background: linear-gradient(to bottom, var(--basic-white) 102px, var(--basic-light) 102px);
+  background: linear-gradient(
+    to bottom,
+    var(--basic-white) 102px,
+    var(--basic-light) 102px
+  );
 }
 
 .service-container {
@@ -550,12 +549,13 @@ body {
 }
 
 .about-text {
+  width: 500px;
   margin: 0;
   margin-bottom: 30px;
   color: var(--basic-dark);
 }
 
-.transport-company-list{
+.transport-company-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -567,11 +567,10 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-
 }
 
 .transport-company-item:last-child {
-margin-bottom:30px;
+  margin-bottom: 30px;
 }
 
 .contacts {
@@ -590,6 +589,7 @@ margin-bottom:30px;
 }
 
 .contacts-text {
+  width: 500px;
   margin: 0;
   margin-bottom: 30px;
   color: var(--basic-dark);
@@ -613,7 +613,6 @@ margin-bottom:30px;
   font-style: normal;
   color: var(--basic-dark);
 }
-
 
 .contacts-phone {
   font-style: normal;
@@ -704,15 +703,19 @@ margin-bottom:30px;
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  margin-top: 62px;
+  margin-bottom: 35px;
 }
 
 .footer-info-container {
   display: flex;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 47px;
 }
 
 .footer-address {
+  margin: 0;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -726,6 +729,7 @@ margin-bottom:30px;
 .footer-menu-list {
   display: flex;
   justify-content: space-between;
+  margin-top: 137px;
   width: 444px;
   margin: 0;
   padding: 0;
@@ -742,6 +746,8 @@ margin-bottom:30px;
 }
 
 .footer-contact-link {
+  padding: 2px;
+  margin-top: 140px;
   width: 180px;
   font-style: normal;
   font-size: 16px;
@@ -758,6 +764,7 @@ margin-bottom:30px;
   justify-content: flex-end;
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 61px;
 }
 
 .footer-social-list {
@@ -772,8 +779,8 @@ margin-bottom:30px;
 
 .footer-social-link {
   display: block;
-  width: 40px;
   height: 40px;
+  width: 40px;
   border-radius: 50%;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.3);
@@ -796,6 +803,9 @@ margin-bottom:30px;
 }
 
 .breadcrumbs-title {
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
@@ -811,9 +821,10 @@ margin-bottom:30px;
 
 .breadcrumbs-list {
   display: flex;
-  list-style: none;
   margin: 0;
+  margin-bottom: 34px;
   padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs-item {
@@ -829,9 +840,14 @@ margin-bottom:30px;
   width: 840px;
 }
 .catalog-filter {
+  margin-left: 60px;
+  width: 200px;
   background-color: var(--basic-light);
 }
 .catalog-filter-title {
+  margin-top: 25px;
+  margin-left: 60px;
+  margin-bottom: 60px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -852,6 +868,8 @@ margin-bottom:30px;
 }
 
 .catalog-sorting-title {
+  margin-left: 40px;
+  margin-right: 206px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -859,7 +877,39 @@ margin-bottom:30px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+.sorting-button {
+  margin-left: auto;
+  margin-right: 20px;
+}
 
+.arrows {
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+  background-color: var(--basic-light);
+}
+
+.arrows-icons {
+  opacity: 0.3;
+}
+
+.arrows:first-of-type .arrows-icons {
+  transform: rotate(180deg);
+}
+
+.select-control {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 141px;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  background-color: var(--basic-light);
+  border: none;
+  cursor: pointer;
+}
 .select-item {
   font-family: "Rubik", sans-serif;
   line-height: 30px;
@@ -869,6 +919,8 @@ margin-bottom:30px;
 
 .catalog-sorting {
   display: flex;
+  align-items: center;
+  height: 70px;
   background-color: var(--basic-light);
 }
 
