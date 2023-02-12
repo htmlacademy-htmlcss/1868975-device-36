@@ -368,7 +368,8 @@ body {
 .promo-slider-img-wrapper {
   width: 560px;
 }
-.promo-slider-img-wrapper img {
+.slider-image {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -472,7 +473,8 @@ body {
 }
 
 .category-list {
-  display: flex;
+  display: flex;  /*переделать гридом*/
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
@@ -599,6 +601,7 @@ body {
 /* About */
 .about-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
@@ -780,6 +783,7 @@ body {
 
 .footer-info-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 47px;
@@ -798,7 +802,8 @@ body {
 }
 
 .footer-menu-list {
-  display: flex;
+  display: flex; /*переделать гридом*/
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 137px;
   width: 444px;
@@ -832,6 +837,7 @@ body {
 
 .footer-contacts-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 1160px;
   margin: 0 auto;
@@ -839,7 +845,8 @@ body {
 }
 
 .footer-social-list {
-  display: flex;
+  display: flex; /*переделать гридом*/
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
   margin: 0;
@@ -896,6 +903,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1018,8 +1026,17 @@ body {
   text-decoration: none;
 }
 
+.product-card-image {
+  display: block;
+  margin-bottom: 32px;
+  max-width: 100%;
+  height: auto;
+}
+
 .product-card-title {
   width: 226px;
+  margin: 0;
+  font-size: 18px;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.02em;
@@ -1035,6 +1052,10 @@ body {
 
 .product-card-content {
   display: flex;
+}
+
+.catalog-button {
+  display: none;
 }
 
 .catalog-show-more {
