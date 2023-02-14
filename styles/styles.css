@@ -262,9 +262,11 @@ body {
 
 .navigation-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 471px;
+  gap: 45px;
+  max-width: 702px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -473,9 +475,9 @@ body {
 }
 
 .category-list {
-  display: flex;  /*переделать гридом*/
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: 0 auto;
   padding: 0;
   width: 1160px;
@@ -802,11 +804,12 @@ body {
 }
 
 .footer-menu-list {
-  display: flex; /*переделать гридом*/
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 35px;
   margin-top: 137px;
-  width: 444px;
+  max-width: 550px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -845,8 +848,10 @@ body {
 }
 
 .footer-social-list {
-  display: flex; /*переделать гридом*/
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: auto;
+  gap: 15px;
   justify-content: space-between;
   width: 150px;
   margin: 0;
