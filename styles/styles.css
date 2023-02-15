@@ -8,6 +8,7 @@
   --special-gray: #c4c4c4;
   --special-yellow: #ffe17f;
   --special-yellow-hover: #ffc700;
+  --special-yellow-active: #FFCC33;
   --special-purple: #af4fff;
   --status-red: #ff3d3d;
   --status-orange: #fd912e;
@@ -84,6 +85,56 @@ body {
   cursor: pointer;
 }
 
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 40px;
+  min-width: 200px;
+  background: linear-gradient(to bottom, var(--basic-white) 40%, var(--special-yellow) 40%, var(--special-yellow) 60%, var(--basic-white) 60%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+  border: 0;
+  outline: none;
+  flex-wrap: wrap;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background: var(--special-yellow);
+}
+
+.button:active {
+  background: var(--special-yellow-active);
+}
+
+.button:focus-visible {
+  outline: none;
+}
+
+.button:focus-visible::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--special-purple);
+  top: -2px;
+  left: -2px;
+  transition: 0.4s;
+}
+
+.button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
 /* Pages */
 
 .main-header {
@@ -110,9 +161,52 @@ body {
   margin-bottom: 20px;
 }
 
+.logo-link {
+  position: relative;
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.logo-link:focus-visible {
+  outline: none;
+}
+
+.logo-link:focus-visible::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 149px;
+  height: 40px;
+  left: -4px;
+  top: -4px;
+  border: 2px solid var(--special-purple);
+}
+
+.logo-link:visited {
+  position: relative;
+  display: block;
+  width: 145px;
+  height: 36px;
+}
+
 .header-logo {
   display: block;
 }
+
+
 
 .user-navigation {
   display: flex;
@@ -174,6 +268,29 @@ body {
   min-width: 54px;
   color: var(--basic-black);
   text-decoration: none;
+}
+
+.menu-link:hover {
+  opacity: 0.6;
+}
+
+.menu-link:focus-visible {
+  outline: none;
+}
+
+.menu-link:focus-visible::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -4px;
+  left: -4px;
+  border: 2px solid #AF4FFF;
+}
+
+.menu-link:active {
+  opacity: 0.3;
 }
 
 .menu-list-user {
@@ -273,7 +390,31 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
+}
+
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:focus-visible {
+  outline: none;
+}
+
+.navigation-link:focus-visible::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -4px;
+  left: -4px;
+  border: 2px solid var(--special-purple);
+}
+
+.navigation-link:active {
+  opacity: 0.3;
 }
 
 .subcatalog-button {
@@ -418,6 +559,7 @@ body {
 }
 
 .slider-button {
+  min-width: 220px;
   margin-bottom: 50px;
 }
 
@@ -477,7 +619,7 @@ body {
 .category-list {
   display: grid;
   gap: 40px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   margin: 0 auto;
   padding: 0;
   width: 1160px;
@@ -630,6 +772,10 @@ body {
   color: var(--basic-dark);
 }
 
+.about-button {
+  min-width: 270px;
+}
+
 .transport-company-list {
   margin: 0;
   padding: 0;
@@ -705,6 +851,10 @@ body {
   color: var(--basic-dark);
 }
 
+.contacts-button {
+  min-width: 259px;
+}
+
 /* Malling */
 
 .mailing {
@@ -776,11 +926,12 @@ body {
 }
 
 .footer-logo {
-  display: flex;
-  width: 1160px;
-  margin: 0 auto;
+  display: block;
+  width: 145px;
+  height: 36px;
   margin-top: 62px;
   margin-bottom: 35px;
+
 }
 
 .footer-info-container {
@@ -849,7 +1000,7 @@ body {
 
 .footer-social-list {
   display: grid;
-  grid-template-columns: 40px 40px 40px;
+  grid-template-columns: repeat(3, 40px);
   grid-template-rows: auto;
   gap: 15px;
   justify-content: space-between;
