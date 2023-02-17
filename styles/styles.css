@@ -359,7 +359,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 45px;
+  gap:  10px 45px;
   max-width: 702px;
   margin: 0;
   padding: 0;
@@ -391,11 +391,63 @@ body {
   opacity: 0.3;
 }
 
+.header-subcatalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 1040px;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .subcatalog-button {
   display: block;
   width: 293px;
   padding: 15px 57px 15px 0;
   box-sizing: border-box;
+}
+
+.catalog-item {
+  position: relative;
+}
+
+.subcatalog-wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  width: 1160px;
+  display: block;
+  padding-bottom: 45px;
+  background-color: var(--special-yellow);
+  top: 57px;
+  left: -60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.catalog-item:focus-within .subcatalog-hide {
+  display: block;
+}
+
+.subcatalog-hide {
+  display: none
+}
+
+
+.list-of-items {
+  display: flex;
+}
+
+.video-device-item,
+.smart-device-item,
+radio-controlled-device-item {
+  margin-bottom: 6px;
 }
 
 .video-device-link {
@@ -417,31 +469,6 @@ body {
   line-height: 18px;
   color: var(--basic-black);
   text-decoration: none;
-}
-
-/* для скрытия subcatalog */
-.subcatalog-hide {
-  display: none;
-}
-
-.subcatalog-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.header-subcatalog {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  width: 1040px;
-}
-
-.list-of-items {
-  display: flex;
 }
 
 .video-device-list {
