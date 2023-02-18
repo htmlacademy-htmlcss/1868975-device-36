@@ -92,7 +92,7 @@ body {
   min-height: 40px;
   min-width: 200px;
   padding: 10px 10px;
-  background: linear-gradient(to bottom, var(--basic-white) 40%, var(--special-yellow) 40%, var(--special-yellow) 60%, var(--basic-white) 60%);
+  background: linear-gradient(to bottom, var(--basic-white) 39%, var(--special-yellow) 39%, var(--special-yellow) 58%, var(--basic-white) 58%);
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -560,7 +560,12 @@ radio-controlled-device-item {
   color: var(--basic-dark);
 }
 
-.feature-value {
+.technical-table {
+  border-spacing: 0;
+}
+
+.feature-value td {
+  width: min-content;
   margin-bottom: 12px;
   font-size: 36px;
 }
@@ -571,9 +576,10 @@ radio-controlled-device-item {
 }
 
 .feature-name td {
+  width: min-content;
   padding: 0;
   padding-top: 12px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .slider-pagination {
@@ -584,7 +590,7 @@ radio-controlled-device-item {
 
 .slider-button {
   min-width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 .slider-pagination-item {
@@ -593,9 +599,14 @@ radio-controlled-device-item {
   justify-content: space-between;
 }
 
-.slider-pagination-item:nth-child(2) {
+.slider-pagination-item:nth-child(1) {
   display: none;
 }
+
+
+/* .slider-pagination-item:nth-child(2) {
+  display: none;
+} */
 
 .slider-pagination-item:nth-child(3) {
   display: none;
