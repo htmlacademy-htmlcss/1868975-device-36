@@ -273,9 +273,12 @@
         </div>
       </section>
 
-      <div class="delivery-order">
-        <a class="delivery-order-link" href="#">Доставим редкий товар под заказ</a>
-      </div>
+      <button class="delivery-order" type="button">
+        <span class="delivery-order-text">Доставим редкий товар под заказ</span>
+        <svg class="info" width="2" height="12" viewBox="0 0 2 12" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+        </svg>
+      </button>
 
       <div class="about-container">
         <section class="about">
@@ -307,8 +310,6 @@
         </section>
       </div>
 
-
-
       <section class="mailing">
         <div class="mailing-wrapper">
           <div class="mailing-container">
@@ -316,8 +317,10 @@
             <p class="mailing-text">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br>спецпредложения и вот это вот всё.</p>
           </div>
           <div class="mailing-form-container">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <input type="email" name="mailing" placeholder="Ваш e-mail" required>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post" id="sub-form">
+              <label class="visually-hidden" for="subscription-email">Адрес электронной почты для рассылки.</label>
+              <input class="field-line" type="email" placeholder="Ваш e-mail" size="129" name="subscription-email"
+                id="subscription-email" required>
               <button class="button-mailing" type="submit">Подписаться</button>
             </form>
             <span class="malling-notice" >Это бесплатно</span>

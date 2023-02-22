@@ -231,16 +231,15 @@ body {
 }
 
 .search:hover {
-  background-color: var(--basic-black);
-  color: var(--basic-white);
+  background-color: var(--special-yellow);
+  color: var(--basic-black);
   border: 2px solid var(--basic-black);
 }
 
 .search:active {
-  background-color: var(--basic-black);
-  color: var(--basic-white);
+  background-color: var(--special-yellow);
+  color: var(--basic-black);
   opacity: 0.3;
-  border: 2px solid var(--basic-black);
 }
 
 .search:focus-visible {
@@ -252,7 +251,7 @@ body {
   .search:focus {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
-}
+  }
 }
 
 .search:disabled {
@@ -298,14 +297,13 @@ body {
   .button-search:focus {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
-}
+  }
 }
 
 .button-search:disabled {
   opacity: 0.3;
   pointer-events: none;
 }
-
 
 .menu-link {
   position: relative;
@@ -551,7 +549,7 @@ radio-controlled-device-item {
 }
 
 @supports not selector(:focus-visible) {
-   .video-device-link:focus {
+  .video-device-link:focus {
     outline: 2px solid var(--special-purple);
   }
 }
@@ -574,7 +572,6 @@ radio-controlled-device-item {
     outline: 2px solid var(--special-purple);
   }
 }
-
 
 .smart-device-link:active {
   opacity: 0.3;
@@ -915,7 +912,6 @@ radio-controlled-device-item {
   background-color: var(--special-yellow);
 }
 
-
 .category-item:nth-child(2) > .category-link .category-item-wrapper {
   justify-content: flex-end;
 }
@@ -943,7 +939,7 @@ radio-controlled-device-item {
   .category-link:focus {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
-}
+  }
 }
 
 .category-list {
@@ -1018,13 +1014,12 @@ radio-controlled-device-item {
     padding-left: 60px;
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
-}
+  }
 }
 
 .button-services {
   min-width: 160px;
 }
-
 
 .services-item:first-child {
   margin-top: 64px;
@@ -1033,7 +1028,7 @@ radio-controlled-device-item {
 .services-item:not(:last-child) {
   margin-bottom: 35px;
 }
-/* добавить состояния  before + новый class */
+
 .service-title {
   margin: 0;
   margin-bottom: 34px;
@@ -1059,62 +1054,133 @@ radio-controlled-device-item {
 
 .service-text {
   margin: 0;
-  width: 475px;
+  padding-bottom: 144px;
+  width: 479px;
   color: var(--basic-dark);
 }
 
 .service-delivery {
+  /* display: none; */
   background-image: url("../images/deliveryman.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right 76px;
   width: 694px;
-  margin-top: 72px;
+  padding-top: 72px;
 }
 
 .service-guarantee {
   display: none;
   background-image: url("../images/garantiya-icon.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 560px 60px;
   width: 729px;
-  margin-top: 72px;
+  padding-top: 72px;
 }
 
 .service-loan {
   display: none;
   background-image: url("../images/credit-icon.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: 574px 65px;
   width: 729px;
-  margin-top: 72px;
+  padding-top: 72px;
 }
 
 /* Delivery */
 
-.delivery-order {
-  display: flex;
-  width: 1160px;
+.delivery-order-text {
   margin: 0 auto;
-  margin-bottom: 70px;
-  background-color: var(--basic-light);
+  align-self: center;
+  padding-top: 43px;
+  padding-bottom: 37px;
+  line-height: 20px;
+  padding-left: 154px;
+  padding-right: 150px;
 }
 
-.delivery-order-link {
-  margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  align-self: center;
+.delivery-order {
+  display: flex;
+  box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  text-decoration: none;
-  color: var(--basic-black);
+  background-color: var(--basic-light);
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 71px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
 }
 
+.info {
+  opacity: 0.3;
+  position: absolute;
+  right: 61px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.delivery-order::before {
+  height: 100%;
+  width: 125px;
+  content: " ";
+  background-color: var(--special-yellow);
+  background-image: url("../images/truck.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  box-sizing: border-box;
+}
+
+.delivery-order::after {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  content: " ";
+  background-color: rgba(220, 220, 220, 0.5);
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.delivery-order:hover.delivery-order::before {
+  background-color: var(--special-yellow-hover);
+}
+
+.delivery-order:hover .info {
+  opacity: 1;
+}
+
+.delivery-order:active {
+  opacity: 0.3;
+}
+
+.delivery-order:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 1px;
+}
+
+@supports not selector(:focus-visible) {
+  .delivery-order:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 1px;
+  }
+}
+.delivery-order:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 /* About */
 .about-container {
   display: flex;
@@ -1129,6 +1195,7 @@ radio-controlled-device-item {
 }
 
 .about-title {
+  position: relative;
   margin: 0;
   margin-top: 47px;
   margin-bottom: 48px;
@@ -1136,6 +1203,15 @@ radio-controlled-device-item {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.about-title::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--basic-black);
+  width: 84px;
+  height: 7px;
+  top: -48px;
 }
 
 .about-text {
@@ -1156,11 +1232,22 @@ radio-controlled-device-item {
 }
 
 .transport-company-item {
-  padding-left: 34px;
+  padding-left: 30px;
   margin-bottom: 19px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: -0.02em;
+}
+
+.transport-company-item::before {
+  display: inline-block;
+  position: relative;
+  content: " ";
+  border-radius: 50%;
+  border: 4px solid var(--special-yellow-active);
+  left: -27px;
+  top: -2px;
 }
 
 .transport-company-item:last-child {
@@ -1173,6 +1260,7 @@ radio-controlled-device-item {
 }
 
 .contacts-title {
+  position: relative;
   margin: 0;
   margin-top: 47px;
   margin-bottom: 48px;
@@ -1180,6 +1268,15 @@ radio-controlled-device-item {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.contacts-title::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--basic-black);
+  width: 84px;
+  height: 7px;
+  top: -48px;
 }
 
 .contacts-text {
@@ -1243,6 +1340,7 @@ radio-controlled-device-item {
 .mailing-title {
   margin: 0;
   margin-top: 64px;
+  padding-left: 7px;
   width: 360px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -1253,21 +1351,96 @@ radio-controlled-device-item {
 .mailing-text {
   margin: 0;
   margin-top: 74px;
-  margin-left: auto;
+  margin-left: 244px;
   width: 560px;
 
   color: var(--basic-dark);
 }
 
 .malling-notice {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 190px;
   margin-left: auto;
   color: var(--basic-dark);
 }
 
+.malling-notice::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: -30.5px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.subscription-form {
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-right: 220px;
+}
+
+.field-line {
+  display: block;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 57px;
+  width: 558px;
+  border: 0;
+  border-bottom: 3px solid var(--special-gray);
+  padding: 0;
+  margin: 0;
+  background-color: var(--basic-light);
+  color: var(--basic-dark);
+  box-sizing: border-box;
+}
+
+.field-line[placeholder] {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  padding-left: 16px;
+  color: rgba(68, 68, 68, 1);
+}
+
+.field-line:focus {
+  outline: none;
+  background-color: var(--basic-gray);
+}
+
+.field-line:focus:valid {
+  outline: none;
+  border-bottom: 3px solid var(--status-green);
+  z-index: 2;
+}
+
+.field-newsletter {
+  width: 559px;
+  border-bottom: 3px solid #c4c4c4;
+  padding: 0;
+  padding-left: 18px;
+  padding-top: 3px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  min-height: 57px;
+}
+
 .button-mailing {
   display: inline-block;
+  padding-left: 36px;
+  padding-right: 33px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-family: "Raleway", sans-serif;
+  font-size: 18px;
   font-weight: 800;
   line-height: 21px;
   text-align: center;
@@ -1279,9 +1452,32 @@ radio-controlled-device-item {
   border: 3px solid var(--special-gray);
 }
 
+.button-mailing:hover {
+  background-color: var(--basic-black);
+  color: var(--basic-white);
+  border-color: var(--basic-black);
+}
+
+.button-mailing:active {
+  background-color: var(--basic-black);
+  color: rgba(255, 255, 255, 0.3);
+  border-color: var(--basic-black);
+}
+
+.button-mailing:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .button-mailing:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
 .mailing-container {
   display: flex;
-  margin-bottom: 144px;
+  margin-bottom: 143px;
 }
 .mailing-form-container {
   display: flex;
