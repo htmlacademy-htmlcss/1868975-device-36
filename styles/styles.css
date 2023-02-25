@@ -2026,6 +2026,9 @@ radio-controlled-device-item {
 }
 
 .catalog-filter-label {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
@@ -2033,6 +2036,18 @@ radio-controlled-device-item {
   opacity: 0.3;
   display: flex;
   margin-bottom: 0;
+}
+
+.catalog-filter-label:first-child {
+  position: relative;
+  left: -13px;
+  top: -3px;
+  margin-right: 40px;
+}
+
+.catalog-filter-label:last-child {
+  position: relative;
+  top: -3px;
 }
 
 .range-input:focus-visible {
@@ -2045,16 +2060,6 @@ radio-controlled-device-item {
   }
 }
 
-.catalog-filter-label:first-child {
-  left: -13px;
-  margin-right: 40px;
-}
-
-.catalog-filter-label:last-child {
-  top: -2px;
-}
-
-
 .catalog-filter-group {
   position: relative;
   padding: 0;
@@ -2064,7 +2069,7 @@ radio-controlled-device-item {
 }
 
 .catalog-filter-group:nth-of-type(3) {
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .catalog-filter-text {
@@ -2078,8 +2083,9 @@ radio-controlled-device-item {
 .catalog-filter-item {
   font-size: 16px;
   line-height: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
+
 
 .catalog-filter-item:last-child {
   margin-bottom: 0;
@@ -2177,7 +2183,7 @@ radio-controlled-device-item {
 
 .control-label {
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
   display: block;
 }
 
