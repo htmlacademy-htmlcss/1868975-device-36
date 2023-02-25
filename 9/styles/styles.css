@@ -7,6 +7,7 @@
   --basic-white: #ffffff;
   --special-gray: #c4c4c4;
   --special-gray-show-more: #E5E5E5;
+  --special-gray-intup: #CCCCCC;
   --special-yellow: #ffe17f;
   --special-yellow-hover: #ffc700;
   --special-yellow-active: #ffcc33;
@@ -74,7 +75,7 @@ body {
   box-sizing: border-box;
   min-height: 40px;
   min-width: 200px;
-  padding: 10px 10px;
+  padding: 10px 10px 10px 14px;
   background: linear-gradient(
     to bottom,
     transparent 39%,
@@ -485,7 +486,7 @@ body {
   width: 50px;
   background-color: transparent;
   opacity: 0.3;
-  border: 2px solid #000000;
+  border: 2px solid var(--basic-black);
   border-radius: 50%;
   box-sizing: border-box;
 }
@@ -1456,7 +1457,7 @@ radio-controlled-device-item {
   font-size: 18px;
   line-height: 30px;
   padding-left: 16px;
-  color: rgba(68, 68, 68, 1);
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .field-line:focus {
@@ -1472,12 +1473,12 @@ radio-controlled-device-item {
 
 .field-newsletter {
   width: 559px;
-  border-bottom: 3px solid #c4c4c4;
+  border-bottom: 3px solid var(--special-gray);
   padding: 0;
   padding-left: 18px;
   padding-top: 3px;
   box-sizing: border-box;
-  background-color: #f0f0f0;
+  background-color: var(--basic-light);
   min-height: 57px;
 }
 
@@ -1868,39 +1869,431 @@ radio-controlled-device-item {
 
 /* Catalog filter */
 .filter-container {
+  box-sizing: border-box;
   width: 320px;
+  padding-left: 60px;
 }
 
 .catalog-section {
   width: 840px;
   background-color: var(--basic-white);
 }
+
 .catalog-filter {
-  margin-left: 60px;
   width: 200px;
   background-color: var(--basic-light);
 }
+
+
 .catalog-filter-title {
-  margin-top: 25px;
-  margin-left: 60px;
-  margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    padding: 0;
+    padding-top: 12px;
+    margin-bottom: 28px;
+}
+
+/*Рэндж*/
+.range {
+  width: 200px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-bottom: 13px;
+  background-color: var(--basic-gray);
+  border-radius: 2px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: var(--basic-black);
+}
+
+.toggle-min {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -7px;
+  left: -9px;
+  border: none;
+  background-color: var(--basic-light);
+  cursor: pointer;
+}
+
+.toggle-max {
+  width:18px;
+  height: 18px;
+  position: absolute;
+  background-color: var(--basic-light);
+  border: none;
+  top: -7px;
+  right: -9px;
+  cursor: pointer;
+}
+
+.toggle-max::after {
+  position: absolute;
+  content: " ";
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-light-gray);
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--basic-black);
+}
+
+.toggle-min::after {
+  position: absolute;
+  content: " ";
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-light-gray);
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+}
+
+.toggle-min:hover.toggle-min::after {
+  opacity: 0.5;
+}
+
+.toggle-max:hover.toggle-max::after {
+  opacity: 0.5;
+}
+
+.toggle-max:active.toggle-max::after {
+  background-color: var(--basic-black);
+  opacity: 1;
+}
+
+.toggle-min:active.toggle-min::after {
+  background-color: var(--basic-black);
+  opacity: 1;
+}
+
+.toggle-max:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .toggle-max:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.toggle-min:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .toggle-min:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+  text-align: start;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-black);
+  opacity: 0.3;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.range-input:focus-visible {
+  outline: 2px solid var(--special-purple);
+}
+
+@supports not selector(:focus-visible) {
+  .range-input:focus {
+    outline: 2px solid var(--special-purple);
+  }
+}
+
+.catalog-filter-label:first-child {
+  left: -13px;
+  margin-right: 40px;
+}
+
+.catalog-filter-label:last-child {
+  top: -2px;
+}
+
+
+.catalog-filter-group {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  border: none;
+}
+
+.catalog-filter-group:nth-of-type(3) {
+  margin-bottom: 36px;
+}
+
+.catalog-filter-text {
+  box-sizing: border-box;
+  border-top: 2px solid var(--basic-black);
+  padding-top: 12px;
+  width: 200px;
+  display: block;
+}
+
+.catalog-filter-item {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: -9px;
+}
+
+.catalog-right-column {
+  width: 840px;
+}
+
+.filter {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 46px;
 }
 
-.catalog-filter-subtitle {
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -0.02em;
-}
-
-.catalog-filter-item {
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 19px;
+}
+
+.control-input {
+  appearance: none;
+  position: absolute;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--special-gray-intup);
+  border-radius: 3px;
+}
+
+.control-input:checked + .control-mark {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid var(--basic-black);
+  border-radius: 3px;
+  background-image: url("../images/check-input.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 10px 10px;
+}
+
+
+.control-input:focus-visible + .control-mark::after {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  left: -2px;
+  top: -2px;
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .control-input:focus + .control-mark::after {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    left: -2px;
+    top: -2px;
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.control-label {
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+}
+
+.control:hover .control-label {
+  opacity: 0.6;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:active .control-label {
+  opacity: 0.3;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control-input:disabled ~ .control-label {
+  opacity: 0.1;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.1;
+}
+
+.control-radio {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control-radio:last-of-type {
+  padding-top: 2px;
+}
+
+.control-mark-radio {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--special-gray-intup);
+  border-radius: 50%;
+}
+
+.control-input-radio:checked + .control-mark-radio {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border: 2px solid var(--basic-black);
+  border-radius: 50%;
+  background-image: url("../images/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 8px 8px;
+}
+
+
+.control-input-radio:focus-visible + .control-mark-radio::after {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  left: -2px;
+  top: -2px;
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .control-input-radio:focus + .control-mark-radio::after {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    left: -2px;
+    top: -2px;
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.control-radio:hover .control-label {
+  opacity: 0.6;
+}
+
+.control-radio:hover .control-mark-radio {
+  opacity: 0.6;
+}
+
+.control-radio:active .control-label {
+  opacity: 0.3;
+}
+
+.control-radio:active .control-mark-radio {
+  opacity: 0.3;
+}
+
+/*Стили неактивных чекбоксов*/
+.control-input-radio:disabled ~ .control-label {
+  opacity: 0.1;
+}
+
+.control-input-radio:disabled + .control-mark-radio {
+  opacity: 0.1;
+}
+
+.filter-button {
+  min-width: 220px;
 }
 
 .catalog-sorting-title {
@@ -2108,12 +2501,6 @@ radio-controlled-device-item {
 
 .catalog-show-more {
   display: flex;
-  width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 44px;
-}
-.catalog-show-more {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 760px;
@@ -2124,7 +2511,9 @@ radio-controlled-device-item {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 15px 40px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  padding: 15px 40px 15px 44px;
   border: 3px solid var(--special-gray-show-more);
   background-color: var(--basic-white);
   cursor: pointer;
