@@ -8,6 +8,7 @@
   --special-gray: #c4c4c4;
   --special-gray-show-more: #E5E5E5;
   --special-gray-intup: #CCCCCC;
+  --special-gray-basket: #1A1A1A;
   --special-yellow: #ffe17f;
   --special-yellow-hover: #ffc700;
   --special-yellow-active: #ffcc33;
@@ -287,8 +288,11 @@ body {
   cursor: default;
 }
 
-.menu-link {
+.menu-item {
   position: relative;
+}
+
+.menu-link {
   display: block;
   height: 30px;
   min-width: 54px;
@@ -362,6 +366,7 @@ body {
 }
 
 .cart {
+  position: relative;
   padding-left: 44px;
   background-image: url(../images/user-cart.svg);
   background-repeat: no-repeat;
@@ -2226,7 +2231,7 @@ radio-controlled-device-item {
   position: absolute;
   box-sizing: border-box;
   left: 0;
-  top: 2px;
+  top: 1px;
   width: 20px;
   height: 20px;
   border: 2px solid var(--special-gray-intup);
@@ -2237,7 +2242,7 @@ radio-controlled-device-item {
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 1px;
   border: 2px solid var(--basic-black);
   border-radius: 50%;
   background-image: url("../images/radio.svg");
@@ -2666,4 +2671,187 @@ radio-controlled-device-item {
 
 .pagination-next {
   padding-right: 21px;
+}
+
+
+/* Корзина */
+.basket-popover {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: 280px;
+  top: 36px;
+  left: -126px;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--basic-white);
+  padding: 20px;
+  background: var(--basic-black);
+  z-index: 6;
+  flex-wrap: wrap;
+}
+
+.menu-item:focus-within .basket-popover {
+  display: flex;
+}
+
+.basket-popover::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: -6px;
+  left: 153px;
+  width: 14px;
+  height: 6px;
+  background-image: url("../images/tooltip-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.basket-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.basket-item-link {
+  position: relative;
+  display: flex;
+  text-decoration: none;
+  color: var(--basic-white);
+  gap: 23px;
+  flex-wrap: wrap;
+}
+
+.basket-item-link:hover {
+  opacity: 0.6;
+}
+
+.basket-item-link:active {
+  opacity: 0.3;
+}
+
+.basket-item-link:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .basket-item-link:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.basket-description {
+  display: flex;
+  max-width: 185px;
+  flex-wrap: wrap;
+}
+
+.delete-btn {
+  position: relative;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  background-color: var(--basic-black);
+  background-image: url('../images/delete-btn.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.delete-btn:hover {
+  opacity: 0.6;
+}
+
+.delete-btn:active {
+  opacity: 0.3;
+}
+
+.delete-btn:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .delete-btn:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.basket-results {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  background-color: var(--special-gray-basket);
+  margin-left: -20px;
+  margin-right: -20px;
+  flex-wrap: wrap;
+}
+
+.cost-container {
+  margin-left: auto;
+}
+
+.open-basket-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  vertical-align: center;
+  width: 280px;
+  padding: 15px 20px 15px 23px;
+  border: 0;
+  background-color: var(--basic-white);
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.open-basket-btn:hover {
+  background: var(--special-yellow);
+}
+
+.open-basket-btn:active {
+  background: var(--special-yellow);
+  color: rgb(0, 0, 0, 0.3)
+}
+
+
+.open-basket-btn:focus-visible {
+  outline: 2px solid var(--special-purple);
+  outline-offset: 2px;
+}
+
+@supports not selector(:focus-visible) {
+  .open-basket-btn:focus {
+    outline: 2px solid var(--special-purple);
+    outline-offset: 2px;
+  }
+}
+
+.open-basket-btn:disabled {
+  color: rgb(0, 0, 0, 0.3);
+  cursor: default;
 }
