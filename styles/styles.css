@@ -63,6 +63,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  min-width: 1200px;
   min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
@@ -195,7 +196,7 @@ body {
 .search {
   position: relative;
   display: block;
-  height: 40px;
+  min-height: 40px;
   width: 359px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
@@ -250,7 +251,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
   line-height: 16px;
   font-size: 16px;
   border-top-right-radius: 50px;
@@ -302,7 +303,6 @@ body {
 
 .menu-link {
   display: block;
-  height: 30px;
   min-width: 54px;
   color: var(--basic-black);
   text-decoration: none;
@@ -344,6 +344,7 @@ body {
   background-repeat: no-repeat;
   background-position-x: 1px;
   background-position-y: 9px;
+  overflow: hidden;
 }
 
 .log-out-main {
@@ -551,6 +552,7 @@ body {
   left: -60px;
   padding-left: 60px;
   padding-right: 60px;
+  z-index: 5;
 }
 
 .catalog-item:focus-within .subcatalog-hide {
@@ -682,7 +684,7 @@ body {
   position: relative;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 67px;
   z-index: 2;
 }
 
@@ -747,7 +749,7 @@ body {
 
 .hero-parameters-01 {
   display: grid;
-  grid-template-columns: 141px 147px;
+  grid-template-columns:  141px 147px;
   grid-template-rows: auto auto;
   grid-auto-flow: column;
   width: 305px;
@@ -784,6 +786,7 @@ body {
   font-size: 36px;
   line-height: 30px;
   margin: 0;
+  overflow-wrap: break-word;
 }
 
 .parameter-description {
@@ -870,14 +873,11 @@ body {
 }
 
 .slider-pagination-controls {
-  position: absolute;
-  top: 533px;
-  left: 532px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   margin: 0;
+  margin-top: -27px;
   padding: 0;
   list-style-type: none;
 }
@@ -891,7 +891,6 @@ body {
   width: 12px;
   border: none;
   background-color: var(--basic-white);
-  align-self: center;
   position: relative;
   cursor: pointer;
 }
@@ -1685,8 +1684,10 @@ body {
 }
 
 .footer-contacts-phone {
+  max-width: 190px;
   margin-top: 1px;
   margin-left: auto;
+
 }
 
 .footer-contacts-container {
@@ -2402,6 +2403,7 @@ body {
 
 .catalog-sorting {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 70px;
   background-color: var(--basic-light);
@@ -2561,6 +2563,7 @@ body {
 
 .catalog-pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 760px;
   margin: 0 auto;
@@ -2570,8 +2573,10 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 350px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2582,13 +2587,13 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 40px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .pagination-link {
   display: flex;
   min-width: 40px;
-  height: 40px;
+  min-height: 40px;
   font-size: 16px;
   line-height: 20px;
   justify-content: center;
