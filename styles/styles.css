@@ -198,7 +198,7 @@ body {
   display: block;
   min-height: 40px;
   width: 359px;
-  background-image: url(../images/search.svg);
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: 14px center;
   border-top-left-radius: 50px;
@@ -327,7 +327,6 @@ body {
   opacity: 0.3;
 }
 
-
 .menu-list-user {
   display: flex;
   flex-wrap: wrap;
@@ -338,14 +337,15 @@ body {
 }
 
 .log-in {
-  max-width: 150px;
+  max-width: 129px;
   padding-left: 27px;
   margin-right: 28px;
-  background-image: url(../images/user-login.svg);
+  background-image: url("../images/user-login.svg");
   background-repeat: no-repeat;
   background-position-x: 1px;
   background-position-y: 9px;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .log-out-main {
@@ -369,7 +369,7 @@ body {
 .compare {
   padding-left: 22px;
   margin-right: 18px;
-  background-image: url(../images/compare.svg);
+  background-image: url("../images/compare.svg");
   background-repeat: no-repeat;
   background-position-x: 1px;
   background-position-y: 9px;
@@ -378,7 +378,7 @@ body {
 .cart {
   position: relative;
   padding-left: 44px;
-  background-image: url(../images/user-cart.svg);
+  background-image: url("../images/user-cart.svg");
   background-repeat: no-repeat;
   background-position-x: 16px;
   background-position-y: 6px;
@@ -514,7 +514,7 @@ body {
   right: 18px;
   width: 14px;
   height: 14px;
-  background-image: url(../images/circle-plus-icon.svg);
+  background-image: url("../images/circle-plus-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
@@ -529,7 +529,7 @@ body {
 }
 
 .subcatalog-button:focus-within.subcatalog-button::after {
-  background-image: url(../images/circle-minus-icon.svg);
+  background-image: url("../images/circle-minus-icon.svg");
 }
 
 .subcatalog-button:focus-visible {
@@ -666,6 +666,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 .smart-device-list {
   width: 211px;
   margin: 0;
@@ -673,6 +674,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 .radio-controlled-device-list {
   width: 211px;
   margin: 0;
@@ -702,6 +704,7 @@ body {
 .promo-slider-img-wrapper {
   width: 560px;
 }
+
 .slider-image {
   display: block;
   max-width: 100%;
@@ -750,7 +753,7 @@ body {
 
 .hero-parameters-01 {
   display: grid;
-  grid-template-columns:  141px 147px;
+  grid-template-columns: 141px 147px;
   grid-template-rows: auto auto;
   grid-auto-flow: column;
   width: 305px;
@@ -935,7 +938,7 @@ body {
   cursor: default;
 }
 
-.slider-pagination-button-current:after {
+.slider-pagination-button-current::after {
   position: absolute;
   content: " ";
   height: 12px;
@@ -947,6 +950,7 @@ body {
   top: 0;
   box-sizing: border-box;
 }
+
 /* Category list */
 
 .category {
@@ -1244,11 +1248,14 @@ body {
     outline-offset: 1px;
   }
 }
+
 .delivery-order:disabled {
   opacity: 0.3;
   pointer-events: none;
 }
+
 /* About */
+
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -1256,6 +1263,7 @@ body {
   margin: 0 auto;
   margin-bottom: 70px;
 }
+
 .about {
   width: 520px;
   margin-right: 108px;
@@ -1384,6 +1392,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 .contacts-schedule-item {
   color: var(--basic-dark);
 }
@@ -1397,6 +1406,7 @@ body {
 .mailing {
   background-color: var(--basic-light);
 }
+
 .mailing-wrapper {
   display: flex;
   flex-direction: column;
@@ -1420,7 +1430,6 @@ body {
   margin-top: 74px;
   margin-left: 244px;
   width: 560px;
-
   color: var(--basic-dark);
 }
 
@@ -1441,7 +1450,7 @@ body {
   left: -30.5px;
   width: 14px;
   height: 14px;
-  background-image: url(../images/check.svg);
+  background-image: url("../images/check.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1557,13 +1566,14 @@ body {
 .button-mailing:disabled {
   background-color: var(--basic-white);
   opacity: 0.2;
-  cursor:default;
+  cursor: default;
 }
 
 .mailing-container {
   display: flex;
   margin-bottom: 143px;
 }
+
 .mailing-form-container {
   display: flex;
   margin-bottom: 56px;
@@ -1575,6 +1585,7 @@ body {
   color: var(--basic-white);
   background-color: var(--basic-dark);
 }
+
 .main-footer a {
   color: var(--basic-white);
 }
@@ -1692,11 +1703,6 @@ body {
 }
 
 .footer-contact-link:focus-visible {
-  outline: none;
-  color: var(--basic-white);
-}
-
-.footer-contact-link:focus-visible {
   outline: 2px solid var(--special-purple);
 }
 
@@ -1710,7 +1716,6 @@ body {
   max-width: 190px;
   margin-top: 1px;
   margin-left: auto;
-
 }
 
 .footer-contacts-container {
@@ -2042,6 +2047,7 @@ body {
 .toggle-max:disabled {
   opacity: 0.1;
 }
+
 .toggle-min:disabled {
   opacity: 0.1;
 }
@@ -2104,8 +2110,6 @@ body {
 .range-input:disabled {
   opacity: 0.1;
 }
-
-
 
 .catalog-filter-group {
   position: relative;
@@ -2356,6 +2360,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
 .sorting-button {
   margin-left: auto;
   margin-right: 42px;
@@ -2742,7 +2747,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .basket-pic {
   max-width: 39px;
   height: auto;
@@ -2850,7 +2854,6 @@ body {
   opacity: 0.1;
 }
 
-
 .basket-results {
   display: flex;
   gap: 10px;
@@ -2937,9 +2940,9 @@ body {
 
 /* Отображение модального окна */
 
-/* .modalwin-close {
+.modalwin-close {
   display: none;
-} */
+}
 
 .modal-delivery-form {
   position: relative;
@@ -3103,14 +3106,6 @@ body {
   border: 2px solid var(--status-red);
 }
 
-.modal-mail-input:invalid + .mail-error-msg {
-  color: var(--status-red);
-}
-
-.modal-mail-input:focus:invalid + .mail-error-msg {
-  color: var(--status-red);
-}
-
 .mail-error-msg {
   position: relative;
   display: flex;
@@ -3120,6 +3115,14 @@ body {
   align-items: center;
   color: var(--basic-black);
   margin-bottom: -2px;
+}
+
+.modal-mail-input:invalid ~ .mail-error-msg {
+  color: var(--status-red);
+}
+
+.modal-mail-input:focus:invalid ~ .mail-error-msg {
+  color: var(--status-red);
 }
 
 .modal-subtitle {
@@ -3276,12 +3279,9 @@ body {
 
 .quantity-num::-webkit-inner-spin-button,
 .quantity-num::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   margin: 0;
 }
-
 
 .quantity-num:hover {
   background-color: var(--basic-gray);
