@@ -71,6 +71,11 @@ body {
   color: var(--basic-black);
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .button {
   position: relative;
   display: inline-block;
