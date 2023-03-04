@@ -327,6 +327,7 @@ body {
   opacity: 0.3;
 }
 
+
 .menu-list-user {
   display: flex;
   flex-wrap: wrap;
@@ -1077,6 +1078,11 @@ body {
   }
 }
 
+.button-services-current:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
 .button-services {
   min-width: 160px;
 }
@@ -1483,6 +1489,17 @@ body {
   z-index: 2;
 }
 
+.field-line:disabled {
+  opacity: 0.2;
+}
+
+/* для ошибки формы */
+.field-line-invalid {
+  outline: none;
+  border-bottom: 3px solid var(--status-red);
+  z-index: 2;
+}
+
 .field-newsletter {
   width: 559px;
   border-bottom: 3px solid var(--special-gray);
@@ -1535,6 +1552,12 @@ body {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
   }
+}
+
+.button-mailing:disabled {
+  background-color: var(--basic-white);
+  opacity: 0.2;
+  cursor:default;
 }
 
 .mailing-container {
@@ -2016,6 +2039,13 @@ body {
   }
 }
 
+.toggle-max:disabled {
+  opacity: 0.1;
+}
+.toggle-min:disabled {
+  opacity: 0.1;
+}
+
 .range-wrapper-inputs {
   display: flex;
 }
@@ -2070,6 +2100,12 @@ body {
     outline: 2px solid var(--special-purple);
   }
 }
+
+.range-input:disabled {
+  opacity: 0.1;
+}
+
+
 
 .catalog-filter-group {
   position: relative;
@@ -2358,6 +2394,11 @@ body {
   }
 }
 
+.arrows:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
 .arrows:first-of-type .arrows-icons {
   transform: rotate(180deg);
 }
@@ -2392,6 +2433,10 @@ body {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
   }
+}
+
+.select-control:disabled {
+  opacity: 0.1;
 }
 
 .select-item {
@@ -2801,6 +2846,11 @@ body {
   }
 }
 
+.delete-btn:disabled {
+  opacity: 0.1;
+}
+
+
 .basket-results {
   display: flex;
   gap: 10px;
@@ -2887,9 +2937,9 @@ body {
 
 /* Отображение модального окна */
 
-.modalwin-close {
+/* .modalwin-close {
   display: none;
-}
+} */
 
 .modal-delivery-form {
   position: relative;
@@ -2954,6 +3004,10 @@ body {
     outline: 2px solid var(--special-purple);
     outline-offset: 2px;
   }
+}
+
+.close-button:disabled {
+  opacity: 0.1;
 }
 
 .modal-name-mail {
@@ -3251,7 +3305,7 @@ body {
   }
 }
 
-.quantity-num:invalid {
+.quantity-num-invalid {
   border: 2px solid var(--status-red);
   z-index: 9;
 }
