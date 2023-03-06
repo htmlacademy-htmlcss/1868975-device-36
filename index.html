@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Девайс</title>
   </head>
@@ -14,12 +15,12 @@
       <nav class="navigation">
         <div class="user-navigation">
           <form class="main-search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="for-search" for="search-target">
-              <div class="outline-wrapper">
+            <div class="outline-wrapper">
+              <label class="for-search" for="search-target">
                 <input class="search" id="search-target" type="search" name="search" placeholder="Поиск по сайту">
-              </div>
-              <span class="visually-hidden">Поиск</span>
-            </label>
+                <span class="visually-hidden">Поиск</span>
+              </label>
+            </div>
             <button class="button-search" type="submit">Найти</button>
           </form>
           <ul class="menu-list-user">
@@ -45,7 +46,7 @@
                       <img class="basket-pic" src="images/catalog/product-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
                       <span class="basket-description">Любительская<br> селфи-палка</span>
                     </a>
-                    <button class="delete-btn">
+                    <button class="delete-btn" type="button">
                       <span class=visually-hidden>Удалить позицию из корзины.</span>
                     </button>
                   </li>
@@ -54,7 +55,7 @@
                       <img class="basket-pic" src="images/catalog/product-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
                       <span class="basket-description">Профессиональная<br> селфи-палка</span>
                     </a>
-                    <button class="delete-btn">
+                    <button class="delete-btn" type="button">
                       <span class=visually-hidden>Удалить товар из корзины.</span>
                     </button>
                   </li>
@@ -63,7 +64,7 @@
                   <div class="qty-container"><span>Товаров: 2</span></div>
                   <div class="cost-container"><span>Сумма: 2000 ₽</span></div>
                 </div>
-                <button class="open-basket-btn">Открыть корзину</button>
+                <button class="open-basket-btn" type="submit">Открыть корзину</button>
               </div>
             </li>
           </ul>
@@ -140,8 +141,6 @@
                 <dt class="parameter">50 м</dt>
                 <dd class="parameter-description">Радиус поражения</dd>
               </dl>
-            </div>
-
             </div>
           </li>
           <li class="slider-pagination-item">
