@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
 
 :root {
   --basic-black: #000000;
@@ -989,7 +983,7 @@ img {
   background-color: var(--special-yellow);
 }
 
-.category-item:nth-child(2) > .category-link .category-item-wrapper {
+.category-wrapper-bottom {
   justify-content: flex-end;
 }
 
@@ -1142,7 +1136,7 @@ img {
 }
 
 .service-delivery {
-  /* display: none; */
+  display: none;
   background-image: url("../images/deliveryman.svg");
   background-repeat: no-repeat;
   background-position: right 76px;
@@ -1166,6 +1160,10 @@ img {
   background-position: 574px 65px;
   width: 729px;
   padding-top: 72px;
+}
+
+.services-description-active {
+  display: block;
 }
 
 /* Delivery */
